@@ -18,7 +18,7 @@ export const App = () => {
         speed={1.5}
         global
         polar={[-0.1, Math.PI / 4]}
-        rotation={[Math.PI / 8, 0, 0]}
+        rotation={[Math.PI / 10, 0, 0]}
       >
         <Cup position={[0, 1, 0]} />
       </PresentationControls>

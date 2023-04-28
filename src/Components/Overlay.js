@@ -32,7 +32,7 @@ const Overlay = () => {
               }}
             >
               <div className={styles.overlay}>
-                <p className={styles.title}>coffe cup</p>
+                <p className={styles.title}>coffee cup</p>
                 <button
                   className={styles.pulseBtn}
                   style={{ backgroundColor: snap.color }}
