@@ -18,10 +18,16 @@ import * as Three from "three";
 const ANIM_SPEED = 5;
 
 export function Cup(props) {
-  const { nodes, materials } = useGLTF("/models/cup.gltf");
   const snap = useSnapshot(state);
   const volume = useRef();
-  const logo = useTexture(`cup_logo/${snap.logo}.png`);
+
+  const { nodes, materials } = useGLTF("/models/cup.gltf");
+  const typesctipt = useTexture(`cup_logo/ts.png`);
+  const react = useTexture(`cup_logo/react.png`);
+  const vs = useTexture(`cup_logo/vs.png`);
+
+  const logo =
+    snap.logo === "react" ? react : snap.logo === "vs" ? vs : typesctipt;
 
   useFrame((_state, delta) => {
     const cupVolume = snap.cupVolume * 0.005;

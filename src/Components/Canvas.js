@@ -10,8 +10,8 @@ export const App = () => {
       <Canvas dpr={[1, 2]} eventSource={document.getElementById("root")}>
         <ambientLight intensity={0.5} />
         <spotLight
-          intensity={0.5}
-          angle={0.1}
+          intensity={0.1}
+          angle={1.1}
           penumbra={1}
           position={[0, 15, 10]}
           castShadow
