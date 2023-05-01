@@ -8,9 +8,11 @@ import { Loader } from "@react-three/drei";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<Loader />}>
-      <Canvas />
+    <>
+      <Suspense fallback={<Loader />}>
+        <Canvas />
+      </Suspense>
       <Overlay />
-    </Suspense>
+    </>
   </React.StrictMode>
 );
