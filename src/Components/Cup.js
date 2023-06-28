@@ -48,7 +48,6 @@ export function Cup(props) {
           rotation={[0, 0, 0]}
           scale={0.5}
           map={logo}
-          map-anisotropy={16}
         />
       </mesh>
       <mesh
